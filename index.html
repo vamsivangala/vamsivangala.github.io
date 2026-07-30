@@ -99,6 +99,15 @@
   .job li{margin-bottom:8px; font-size:15px; color:var(--ink);}
   .job li strong{color:var(--navy);}
 
+  /* SKILLS */
+  .skill-pills{display:flex; flex-wrap:wrap; gap:12px;}
+  .pill{
+    background:#fff; border:1px solid var(--line); color:var(--navy);
+    padding:10px 20px; border-radius:999px; font-size:14.5px; font-weight:600;
+    transition:border-color .2s, color .2s, background .2s;
+  }
+  .pill:hover{border-color:var(--teal); color:var(--teal); background:rgba(27,110,110,0.06);}
+
   /* PRINCIPLES */
   .principle-grid{display:grid; grid-template-columns:repeat(2, 1fr); gap:24px;}
   .principle{background:#fff; border:1px solid var(--line); border-radius:10px; padding:26px;}
@@ -154,6 +163,7 @@
     <ul class="navlinks">
       <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
       <li><a href="#approach">Approach</a></li>
       <li><a href="#credentials">Credentials</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -178,7 +188,6 @@
       <div class="stat"><div class="num">18+</div><div class="label">Years in tech, data &amp; AI/ML leadership</div></div>
       <div class="stat"><div class="num">$50M+</div><div class="label">Business value delivered</div></div>
       <div class="stat"><div class="num">3.3M</div><div class="label">Service calls diverted annually</div></div>
-      <div class="stat"><div class="num">6</div><div class="label">Global organizations led within</div></div>
     </div>
   </div>
 </header>
@@ -288,6 +297,7 @@
       <div class="job-company">Capgemini Technology Services India</div>
       <ul>
         <li><strong>Portfolio Leadership:</strong> Led a 12-member predictive modeling and product development team to standardize and classify projects by revenue, scale, and strategic value.</li>
+        <li><strong>Clinical Trials Data & Analytics:</strong> Supported clinical trials data management and analytics initiatives, applying statistical and predictive modeling techniques to improve data quality and reporting accuracy for life sciences clients.</li>
         <li><strong>Process Optimization:</strong> Combined predictive modeling and supervised learning to automate fraud detection and improve data quality.</li>
       </ul>
     </div>
@@ -305,7 +315,27 @@
   </div>
 </section>
 
-<section id="approach">
+<section id="skills">
+  <div class="wrap">
+    <div class="section-label">Technical Skills</div>
+    <h2 class="section-title">Tools &amp; technologies I work in.</h2>
+    <div class="skill-pills">
+      <span class="pill">Python</span>
+      <span class="pill">PyTorch</span>
+      <span class="pill">TensorFlow</span>
+      <span class="pill">LLMs</span>
+      <span class="pill">RAG</span>
+      <span class="pill">NLP</span>
+      <span class="pill">MLOps</span>
+      <span class="pill">AWS</span>
+      <span class="pill">GCP</span>
+      <span class="pill">Azure</span>
+      <span class="pill">SAS</span>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="approach">
   <div class="wrap">
     <div class="section-label">Leadership Approach</div>
     <h2 class="section-title">How I build <em>data &amp; AI products</em> that stick.</h2>
@@ -334,7 +364,7 @@
   </div>
 </section>
 
-<section class="alt" id="credentials">
+<section id="credentials">
   <div class="wrap">
     <div class="section-label">Credentials</div>
     <h2 class="section-title">Education, strengths &amp; recognition.</h2>
